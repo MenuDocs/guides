@@ -8,7 +8,6 @@ categories:
 tags:
 - Discord.js
 - Bot Development
-isComment: true
 ---
 A guide for the basics to moderate level of making a discord.js discord bot.
 <!-- more -->
