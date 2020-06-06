@@ -1,0 +1,20 @@
+{
+  "name": "menudocs-guide",
+  "version": "0.0.1",
+  "description": "This is the long awaited guide for menudocs",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vuepress dev guide",
+    "build": "vuepress build guide"
+  },
+  "author": "Connor Moriarty",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.5.0",
+    "vuepress-theme-reco": "MenuDocs/vuepress-theme-reco-edit#master"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-tesseract": "^0.0.2"
+  }
+}
