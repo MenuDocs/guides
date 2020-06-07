@@ -11,8 +11,3 @@ tags:
 - React
 ---
 A guide for the basics of React in Javascript
-<!-- more -->
-
-## Introduction
-
-Welcome to React

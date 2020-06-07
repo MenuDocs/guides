@@ -9,7 +9,18 @@ const sidebar = {
         '',
         'tableOfContents',
         'example'
-      ]
+      ],
+    '/topics/webdev/': [
+      '',
+      'tableOfContents',
+      'reference',
+      'fullguide'
+    ],
+    '/topics/reactjs/': [
+      '',
+      'tableOfContents',
+      'example'
+    ]
 };
 
 module.exports = sidebar;
