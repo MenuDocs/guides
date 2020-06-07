@@ -93,3 +93,11 @@ Shows text in a Numbered List
 
 #### Usage - 
 `<ol>(tags)</ol>`
+
+### List Items
+
+#### Reason - 
+The Text in each List
+
+#### Usage - 
+`<li>(text)</li>`

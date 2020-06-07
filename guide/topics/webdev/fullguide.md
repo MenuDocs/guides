@@ -74,4 +74,37 @@ Ok Headings, There are 6 types of headings heading 1-6, each of them are shown i
     </html>
 ```
 ### Lists
-Now, Lists. There are 2 types of lists, [Ordered](/topics/webdev/reference.html#ordered-lists) and [Unordered](/topics/webdev/reference.html#unordered-lists)
+Now, Lists. There are 2 types of lists, [Ordered](/topics/webdev/reference.html#ordered-lists) and [Unordered](/topics/webdev/reference.html#unordered-lists). Making Lists also require [List Items](/topics/webdev/reference.html#list-items). Combining these 2 parts results in this, 
+<ul> 
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+or,
+<ol> 
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+after adding in this code our website code looks like this,
+
+```html
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Our Website</title>
+        </head>
+
+        <body>
+            <h1>Title</h1>
+            <p>Hello World</p>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </body>
+    </html>
+```
+
+And that wraps up Headings and Lists! Next up is Links!
