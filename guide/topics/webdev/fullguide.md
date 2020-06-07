@@ -38,7 +38,7 @@ To do this we need 2 new tags, the first is our [body](/topics/webdev/reference.
         <head> 
             <title>Our Website</title>
         </head>
-        
+
         <body>
             <p>Hello World</p>
         </body>
@@ -48,3 +48,8 @@ To do this we need 2 new tags, the first is our [body](/topics/webdev/reference.
 Yes this is just a basic Hello World Website, But everyone has to start somewhere, As we continue with this guide you will build up more and more complex systems in your website!
 
 [Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Initial%20Code)
+
+## Headings and Lists
+
+With the super basics done, We can start getting cool with our website. Just keep in mind, this website won't look especially amazing sadly, but later on we will clean this all up so it looks pretty. <br>
+Ok Headings, There are 6 types of headings heading 1-6, each of them are shown in [headings](/topics/webdev/reference.html#headings)
