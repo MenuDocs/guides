@@ -1,7 +1,7 @@
 ---
 title: Reference
 ---
-You can find a reference to what each piece of HTML and CSS can do, Check out the [Web Development Javascript](/topics/webdevjs) to see what you can do with Javascript.
+You can find a reference to what each piece of HTML and CSS can do.
 
 # HTML
 
@@ -130,5 +130,5 @@ A Clickable Area
 #### Usage - 
 `<button>(text)</button>`
 
-# CSS
+<!-- # CSS -->
 
