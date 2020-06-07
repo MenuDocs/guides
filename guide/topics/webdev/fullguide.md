@@ -20,4 +20,30 @@ Ok first things first, We need to set up our file structure. HTML files are just
 Now that we have a structure, We are actually going to code something! <br>
 To clarify, I will show the completed code at the end of each section, if you would like to see each piece at a time, they are linked to their respective reference page.
 
-To start let's crack open that **index.html** and get to work! Starting off we need our [HTML Doctype Declaration](/topics/webdev/reference.html#html-doctype-declaration), This is done super simply with ```<!DOCTYPE html>```. We will also add in a [head](/topics/webdev/reference.html#head) tag. This head tag, for now, will just contain our [title](/topics/webdev/reference.html#title) tag. 
+To start let's crack open that **index.html** and get to work! Starting off we need our [HTML Doctype Declaration](/topics/webdev/reference.html#html-doctype-declaration), This is done super simply with ```<!DOCTYPE html>```. Next up is the [html](/topics/webdev/reference.html#html) tag. Everything will go in here! We will also add in a [head](/topics/webdev/reference.html#head) tag. This head tag, for now, will just contain our [title](/topics/webdev/reference.html#title) tag. Our total code looks like this,
+```html
+    <!DOCTYPE html>
+    <html>
+        <head> 
+            <title>Our Website</title>
+        </head>
+    </html>
+```
+
+Let's also add in a new paragraph so we have text on our website when we open it up! <br>
+To do this we need 2 new tags, the first is our [body](/topics/webdev/reference.html#body), all of the code that appears on the screen goes here, so images, text, tables, forms, buttons, etc. Will be in our body element. To make some text appear we will use the [paragraph](/topics/webdev/reference.html#paragraph) tag. Our code now looks like this,
+```html
+    <!DOCTYPE html>
+    <html>
+        <head> 
+            <title>Our Website</title>
+        </head>
+        <body>
+            <p>Hello World</p>
+        </body>
+    </html>
+```
+
+Yes this is just a basic Hello World Website, But everyone has to start somewhere, As we continue with this guide you will build up more and more complex systems in your website!
+
+[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Initial%20Code)

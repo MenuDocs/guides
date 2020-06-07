@@ -11,6 +11,14 @@ To Declare HTML Documents.
 #### Usage - 
 `<!DOCTYPE html>`
 
+## Html
+
+#### Reason - 
+The Complete Encasing Tag for HTML Documents, All of your HTML Code goes in this tag.
+
+#### Usage - 
+`<html> </html>`
+
 ## Head
 
 #### Reason - 
