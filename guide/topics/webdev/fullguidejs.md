@@ -1,5 +1,5 @@
 ---
-title: Full Guide | HTML
+title: Full Guide | JS
 ---
 [Full Guide Return](fullguide.md)
 
