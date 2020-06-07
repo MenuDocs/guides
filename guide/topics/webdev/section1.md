@@ -205,4 +205,4 @@ All I added to the file structure was a folder named `img` that way all of our i
 
 [Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/Section%201/Buttons%20and%20Images)
 
-<!-- ## [Section 2](section2.md) -->
+## [Section 2](section2.md)

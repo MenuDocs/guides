@@ -5,6 +5,8 @@ You can find a reference to what each piece of HTML and CSS can do.
 
 # HTML
 
+HTML Reference
+
 ## HTML Doctype Declaration
 
 #### Reason - 
@@ -21,7 +23,7 @@ To Declare HTML Documents.
 The Complete Encasing Tag for HTML Documents, All of your HTML Code goes in this tag.
 
 #### Usage - 
-`<html>(tags)</html>`
+`<html>`tags`</html>`
 
 ## Head
 
@@ -29,7 +31,7 @@ The Complete Encasing Tag for HTML Documents, All of your HTML Code goes in this
 To Store Metadata for the Website such as the title or importing CSS Sheets.
 
 #### Usage - 
-`<head>(tags)</head>`
+`<head>`tags`</head>`
 
 ## Title
 
@@ -37,7 +39,7 @@ To Store Metadata for the Website such as the title or importing CSS Sheets.
 Defines the text that appears on the tab of the page.
 
 #### Usage - 
-`<title>(text)</title>`
+`<title>`text`</title>`
 
 ## Body
 
@@ -45,7 +47,7 @@ Defines the text that appears on the tab of the page.
 Where all your code that is displayed to the user should go.
 
 #### Usage - 
-`<body>(tags)</body>`
+`<body>`tags`</body>`
 
 ## Paragraph
 
@@ -53,7 +55,7 @@ Where all your code that is displayed to the user should go.
 Shows text in a paragraph format
 
 #### Usage - 
-`<p>(text)</p>`
+`<p>`text`</p>`
 
 ## Headings
 
@@ -63,22 +65,22 @@ Puts emphasis on different parts of text, usually for titles.
 ### Types
 
 #### h1 -
-`<h1>(text)</h1>`
+`<h1>`text`</h1>`
 
 #### h2 -
-`<h2>(text)</h2>`
+`<h2>`text`</h2>`
 
 #### h3 -
-`<h3>(text)</h3>`
+`<h3>`text`</h3>`
 
 #### h4 -
-`<h4>(text)</h4>`
+`<h4>`text`</h4>`
 
 #### h5 -
-`<h5>(text)</h5>`
+`<h5>`text`</h5>`
 
 #### h6 -
-`<h6>(text)</h6>`
+`<h6>`text`</h6>`
 
 ## Lists 
 
@@ -88,7 +90,7 @@ Puts emphasis on different parts of text, usually for titles.
 Shows text in a Bullited List
 
 #### Usage - 
-`<ul>(tags)</ul>`
+`<ul>`tags`</ul>`
 
 ### Ordered Lists
 
@@ -96,7 +98,7 @@ Shows text in a Bullited List
 Shows text in a Numbered List
 
 #### Usage - 
-`<ol>(tags)</ol>`
+`<ol>`tags`</ol>`
 
 ### List Items
 
@@ -104,7 +106,7 @@ Shows text in a Numbered List
 The Text in each List
 
 #### Usage - 
-`<li>(text)</li>`
+`<li>`text`</li>`
 
 ## Links
 
@@ -112,7 +114,7 @@ The Text in each List
 Connecting Pages in HTML or redirects to other external pages.
 
 #### Usage - 
-`<a href="url">(text)</a>`
+`<a href=`url`>`text`</a>`
 
 ## Form
 
@@ -120,7 +122,7 @@ Connecting Pages in HTML or redirects to other external pages.
 Create a submit form for buttons and text areas.
 
 #### Usage - 
-`<form action="url">(tags)</form>`
+`<form action="`url`">`tags`</form>`
 
 ## Buttons
 
@@ -128,7 +130,54 @@ Create a submit form for buttons and text areas.
 A Clickable Area
 
 #### Usage - 
-`<button>(text)</button>`
+`<button>`text`</button>`
 
-<!-- # CSS -->
+## Link
 
+#### Reason - 
+Linking One thing to this document
+
+#### Usage - 
+`<link rel="`reltype`" href="`url`">`
+
+# CSS
+
+CSS Reference
+
+## Background
+
+### background-image
+
+#### Reason - 
+Sets a background image from a URL (Local or External)
+
+#### Usage - 
+`background-image: url("`url`");`
+
+### background-color
+
+#### Reason - 
+Sets a background color from a hex id
+
+#### Usage - 
+`background-color: `hex id`;`
+
+### background-position
+
+#### Reason - 
+Sets the position your background should be at.
+
+#### Usage - 
+`background-position: `value`;` <br>
+Value List - 
+<ul> 
+    <li>left top</li>
+    <li>left center</li>
+    <li>left bottom</li>
+    <li>right top</li>
+    <li>right center</li>
+    <li>right bottom</li>
+    <li>center top</li>
+    <li>center</li>
+    <li>center bottom</li>
+</ul>

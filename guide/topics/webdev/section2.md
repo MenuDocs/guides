@@ -7,26 +7,55 @@ title: Full Guide | Section 2
 
 Let's get started shall we?
 
-Our First Page here will be all about making your first document and setting up a file structure for multiple pages of HTML.
+## Welcome
 
-First things first we need to start our project, Just make a folder and open it up in the code editor of your choice!
+Section 2! If you haven't followed section 1 click [here](section1.md). Once you catch up, Come back here!
 
-Ok first things first, We need to set up our file structure. HTML files are just indexed with the .html suffix, So our first page being **index.html**. Next up let's create another folder. This folder is going to be called **pages**. As I said we are making multiple pages inside of our webpage in this guide. So in this pages folder we are only going to make one page named **page1.html**. Now we have no code inside either of these pages yet, but we will get there in the next section, Enjoy the guide!
+### Beginnings
+
+First things first we need to add a new folder to our project! Adding the `css` folder to our project will do!
+
+Inside of our `css` folder we need to add one file `main.css`, we will do something with it in our next topic!
 
 [Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Beginnings)
 
 ## Initial Code
 
-Now that we have a structure, We are actually going to code something! <br>
+Now that we have the structure, We are actually going to code something! <br>
 To clarify, I will show the completed code at the end of each section, if you would like to see each piece at a time, they are linked to their respective reference page.
 
 ### Starting Code
-To start let's crack open that **index.html** and get to work! Starting off we need our [HTML Doctype Declaration](reference.html#html-doctype-declaration), This is done super simply with ```<!DOCTYPE html>```. Next up is the [html](reference.html#html) tag. Everything will go in here! We will also add in a [head](reference.html#head) tag. This head tag, for now, will just contain our [title](reference.html#title) tag. Our total code looks like this,
+To start let's crack open that `main.css` and get to work! Starting off we need to talk syntax. CSS Syntax is very similar to JSON, so if you know JSON formatting the rest of this will be super easy!
+
+All we are going to do right now is set the background image and import the CSS into our HTML. For this we need the [background-image](reference.html#background-image) and the HTML [Link](reference.html#link) tag. Combining these tags makes our code look like this,
+
+**index.html** -
 ```html
-    <!DOCTYPE html>
-    <html>
-        <head> 
-            <title>Our Website</title>
-        </head>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Website</title>
+    <link href="./css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Title</h1>
+    <p>Hello World</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <a href="pages/page1.html">Page 1</a>
+</body>
+</html>
 ```
+
+**main.css** -
+```css
+body {
+    background-image: url("../img/mdwall.png");
+}
+```
+
+If you open up this file you'll see that this image is repeating all over the place, let's fix that. The Image I used is in our [assets](assets.md). To fix this we need two new tags, The first is [background-position](reference.html#background-position)

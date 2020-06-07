@@ -16,8 +16,8 @@ const sidebar = {
       'reference',
       'assets',
       'fullguide',
-      'section1'
-      // 'section2',
+      'section1',
+      'section2'
       // 'guideintermission',
       // 'section3'
     ],
