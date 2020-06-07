@@ -3,6 +3,8 @@ title: Reference
 ---
 You can find a reference to what each piece of HTML and CSS can do, Check out the [Web Development Javascript](/topics/webdevjs) to see what you can do with Javascript.
 
+# HTML
+
 ## HTML Doctype Declaration
 
 #### Reason - 
@@ -111,3 +113,22 @@ Connecting Pages in HTML or redirects to other external pages.
 
 #### Usage - 
 `<a href="url">(text)</a>`
+
+## Form
+
+#### Reason - 
+Create a submit form for buttons and text areas.
+
+#### Usage - 
+`<form action="url">(tags)</form>`
+
+## Buttons
+
+#### Reason - 
+A Clickable Area
+
+#### Usage - 
+`<button>(text)</button>`
+
+# CSS
+

@@ -1,5 +1,5 @@
 ---
-title: Full Guide | HTML
+title: Full Guide | Section 3
 ---
 [Full Guide Return](fullguide.md)
 
@@ -13,7 +13,7 @@ First things first we need to start our project, Just make a folder and open it 
 
 Ok first things first, We need to set up our file structure. HTML files are just indexed with the .html suffix, So our first page being **index.html**. Next up let's create another folder. This folder is going to be called **pages**. As I said we are making multiple pages inside of our webpage in this guide. So in this pages folder we are only going to make one page named **page1.html**. Now we have no code inside either of these pages yet, but we will get there in the next section, Enjoy the guide!
 
-[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Beginnings)
+[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Beginnings)
 
 ## Initial Code
 
@@ -49,7 +49,7 @@ To do this we need 2 new tags, the first is our [body](reference.html#body), all
 
 Yes this is just a basic Hello World Website, But everyone has to start somewhere, As we continue with this guide you will build up more and more complex systems in your website!
 
-[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Initial%20Code)
+[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Initial%20Code)
 
 ## Headings and Lists
 
@@ -105,7 +105,7 @@ after adding in this code our website code looks like this,
 
 And that wraps up Headings and Lists! Next up is Links!
 
-[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Headings%20and%20Lists)
+[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Headings%20and%20Lists)
 
 ### Links
 
@@ -148,4 +148,4 @@ Now that we have a page to direct to let's form our link, using the [link](refer
 
 Links are super easy to do, and now you have your own page to link to! Next up is CSS, Sounds like fun right!
 
-[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Links)
+[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Links)

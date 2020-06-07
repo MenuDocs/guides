@@ -1,5 +1,5 @@
 ---
-title: Full Guide | JS
+title: Full Guide | Section 1
 ---
 [Full Guide Return](fullguide.md)
 
@@ -7,13 +7,15 @@ title: Full Guide | JS
 
 Let's get started shall we?
 
-Our First Page here will be all about making your first document and setting up a file structure for multiple pages of HTML.
+### Welcome
+
+Welcome to Section 1 of our MenuDocs HTML/CSS/JS Webguide. Section 1 is all about making our first HTML Code and this section is based 100% off of HTML Code. At the end of the section you can embark upon Section 2 and so on!
 
 First things first we need to start our project, Just make a folder and open it up in the code editor of your choice!
 
 Ok first things first, We need to set up our file structure. HTML files are just indexed with the .html suffix, So our first page being **index.html**. Next up let's create another folder. This folder is going to be called **pages**. As I said we are making multiple pages inside of our webpage in this guide. So in this pages folder we are only going to make one page named **page1.html**. Now we have no code inside either of these pages yet, but we will get there in the next section, Enjoy the guide!
 
-[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Beginnings)
+[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Beginnings)
 
 ## Initial Code
 
@@ -49,7 +51,7 @@ To do this we need 2 new tags, the first is our [body](reference.html#body), all
 
 Yes this is just a basic Hello World Website, But everyone has to start somewhere, As we continue with this guide you will build up more and more complex systems in your website!
 
-[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Initial%20Code)
+[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Initial%20Code)
 
 ## Headings and Lists
 
@@ -105,7 +107,7 @@ after adding in this code our website code looks like this,
 
 And that wraps up Headings and Lists! Next up is Links!
 
-[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Headings%20and%20Lists)
+[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Headings%20and%20Lists)
 
 ### Links
 
@@ -146,6 +148,61 @@ Now that we have a page to direct to let's form our link, using the [link](refer
     </html>
 ```
 
-Links are super easy to do, and now you have your own page to link to! Next up is CSS, Sounds like fun right!
+Links are super easy to do, and now you have your own page to link to! Next up is Buttons and Images, Sounds like fun right!
 
-[Code](https://github.com/MelodicAlbuild/webdevguide/tree/master/Guides/Links)
+[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Links)
+
+## Buttons and Images
+
+Buttons and Images are gonna be really easy, We will go deeper into buttons when we get into CSS.
+
+### Buttons
+
+Buttons are gonna be pretty easy, All we need is a [Form](reference.md#forms), and a [Button](reference.md#buttons). Our Form needs to Encompass our Button Tag because the form is controling the action, and the button is just the clickable item in the form. After *forming* our Button our code looks like this,
+
+**page1.html** -
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Page | First Webpage</title>
+</head>
+
+<body>
+    <p>Hello World</p>
+    <form action="#">
+        <button>Our Button</button>
+    </form>
+</body>
+</html>
+```
+
+Keep in mind, this is our Page 1 Document, Which means if you open up your `index.html` you need to hit your link we made above this. <br> Keep in mind that our button does nothing but reload the page right now, You can simply change the action to a link to make the button take you to another place such as a website or another page on your website.
+
+### Images
+
+Images can be external or local, For this guide we are using purely local. You can find the image I used [here](assets.md). Using the [Image](reference.md#images) tag you can add in a local image, Our code now looks like this,
+
+**Page 1** -
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Page | First Webpage</title>
+</head>
+
+<body>
+    <p>Hello World</p>
+    <img src="../img/MenuDocs.jpg" alt="MenuDocs" />
+    <form action="#">
+        <button>Our Button</button>
+    </form>
+</body>
+</html>
+```
+
+All I added to the file structure was a folder named `img` that way all of our image assets are in one place! With that we can now move on to CSS! Since CSS is located on another page click the button below the code for this section to go to our Section 2 of our Guide!
+
+[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/HTML/Buttons%20and%20Images)
+
+## [Section 2](section2.md)

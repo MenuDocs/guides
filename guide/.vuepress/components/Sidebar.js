@@ -14,10 +14,12 @@ const sidebar = {
       '',
       'tableOfContents',
       'reference',
+      'assets',
       'fullguide',
-      'fullguidehtml',
-      'fullguidecss',
-      'fullguidejs'
+      'section1',
+      'section2',
+      'guideintermission',
+      'section3'
     ],
     '/topics/reactjs/': [
       '',
