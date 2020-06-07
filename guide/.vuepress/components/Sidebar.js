@@ -16,10 +16,10 @@ const sidebar = {
       'reference',
       'assets',
       'fullguide',
-      'section1',
-      'section2',
-      'guideintermission',
-      'section3'
+      'section1'
+      // 'section2',
+      // 'guideintermission',
+      // 'section3'
     ],
     '/topics/reactjs/': [
       '',
