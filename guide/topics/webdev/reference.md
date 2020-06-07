@@ -56,10 +56,40 @@ Shows text in a paragraph format
 #### Reason - 
 Puts emphasis on different parts of text, usually for titles.
 
-#### Usage - 
-`<h1>(text)</h1>` <br>
-`<h2>(text)</h2>` <br>
-`<h3>(text)</h3>` <br>
-`<h4>(text)</h4>` <br>
-`<h5>(text)</h5>` <br>
+### Types
+
+#### h1 -
+`<h1>(text)</h1>`
+
+#### h2 -
+`<h2>(text)</h2>`
+
+#### h3 -
+`<h3>(text)</h3>`
+
+#### h4 -
+`<h4>(text)</h4>`
+
+#### h5 -
+`<h5>(text)</h5>`
+
+#### h6 -
 `<h6>(text)</h6>`
+
+## Lists 
+
+### Unordered Lists 
+
+#### Reason - 
+Shows text in a Bullited List
+
+#### Usage - 
+`<ul>(tags)</ul>`
+
+### Ordered Lists
+
+#### Reason - 
+Shows text in a Numbered List
+
+#### Usage - 
+`<ol>(tags)</ol>`
