@@ -11,6 +11,8 @@ To Declare HTML Documents.
 #### Usage - 
 `<!DOCTYPE html>`
 
+[Guide Position](fullguide.html#starting-code)
+
 ## Html
 
 #### Reason - 
@@ -101,3 +103,11 @@ The Text in each List
 
 #### Usage - 
 `<li>(text)</li>`
+
+## Links
+
+#### Reason - 
+Connecting Pages in HTML or redirects to other external pages.
+
+#### Usage - 
+`<a href="url">(text)</a>`

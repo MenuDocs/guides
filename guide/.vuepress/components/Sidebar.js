@@ -14,7 +14,8 @@ const sidebar = {
       '',
       'tableOfContents',
       'reference',
-      'fullguide'
+      'fullguide',
+      'fullguidehtml'
     ],
     '/topics/reactjs/': [
       '',
