@@ -2,4 +2,6 @@
 title: Table of Contents
 ---
 
-this is an example of the table of contents.
+Here are all of the available topics -
+
+- [Getting Started](gettingStarted.md) - The first steps to making a Discord bot.

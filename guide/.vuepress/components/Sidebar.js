@@ -2,7 +2,7 @@ const sidebar = {
     '/topics/discordjs/': [
         '',
         'tableOfContents',
-        'example'
+        'gettingStarted'
       ],
 
     '/topics/express/': [
