@@ -24,8 +24,8 @@ const sidebar = {
   '/topics/restapi/': [
     '',
     'tableOfContents',
-    'reference',
-    'section1'
+    'section1',
+    'httpcodes'
   ],
     '/topics/reactjs/': [
       '',
