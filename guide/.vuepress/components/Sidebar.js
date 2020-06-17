@@ -21,6 +21,15 @@ const sidebar = {
       // 'guideintermission',
       // 'section3'
     ],
+  '/topics/restapi/': [
+    '',
+    'tableOfContents',
+    'reference',
+    'section1'
+    // 'section2',
+    // 'guideintermission',
+    // 'section3'
+  ],
     '/topics/reactjs/': [
       '',
       'tableOfContents',
