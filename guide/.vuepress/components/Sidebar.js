@@ -26,9 +26,6 @@ const sidebar = {
     'tableOfContents',
     'reference',
     'section1'
-    // 'section2',
-    // 'guideintermission',
-    // 'section3'
   ],
     '/topics/reactjs/': [
       '',
