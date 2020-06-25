@@ -2,11 +2,9 @@
 title: Getting Started
 ---
 
-If you are reading this then I assume you know at least the basics to [JavaScript and Node.JS](/topics/discordjs/#javascript-and-node-js), if you do not know then I suggest you click the hyper link and read one of those resources.
+## Creating a bot
 
-## Your first bot
-
-Before you start programming a Discord bot you need to make one first. If you would like to visually see this you can follow the video down below, but if you prefer reading you can look below for a quick and easy guide on making your bot.
+Before you start programming a Discord bot you need to create a bot application first. If you would like to visually see this you can follow the video down below, but if you prefer reading you can look below for a quick and easy guide on making your bot.
 
 <div
     style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;" >
@@ -55,11 +53,11 @@ Next you can create a file named `index.js`, it must end in `.js` for two reason
 
 Congratulations, you've completed the first steps to making a Discord bot!
 
-## Your first program
+## Writing your first program
 
-Now that you have your project setup you can start coding. By being at this section you know at least the basics of [JavaScript and Node.JS](/topics/discordjs/#javascript-and-node-js), if not then I highly suggest you follow that hyperlink and read one of those resources. Throughout this guide I will be providing the full code snippets and explaining it.
+Now that you have your project setup you can start coding. By being at this section you know at least the basics of [JavaScript and Node.JS](/topics/discordjs/#javascript-and-node-js), if not then I highly suggest you follow that hyperlink and read one of those resources. In this beginning part of this guide I will be explaining all the code I provide.
 
-Copy and paste this into your editor and save the file.
+Copy and paste this into your editor.
 
 ```javascript
 const { Client } = require("discord.js");
@@ -71,7 +69,7 @@ client.once("ready", () => console.log("I am ready!"));
 client.login("token");
 ```
 
-Replace `token` with your bot token found in the Discord Applications page when you created your bot. Next in your open terminal run this command.
+Replace `token` with your bot token found in the Discord Applications page when you created your bot and save the file. Next in your open terminal run this command.
 
 ```shell
 node index.js
