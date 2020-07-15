@@ -181,3 +181,21 @@ Value List -
     <li>center</li>
     <li>center bottom</li>
 </ul>
+
+### background-size
+
+#### Reason - 
+Sets a background image size
+
+#### Usage - 
+`background-size: `value`;`
+Value List - 
+<ul> 
+    <li>auto</li>
+    <li>cover</li>
+    <li>contain</li>
+    <li>initial</li>
+    <li>inherit</li>
+    <li><em>Pixel Length</em></li>
+    <li><em>Size Percentage</em></li>
+</ul>

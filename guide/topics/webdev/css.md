@@ -1,8 +1,6 @@
 ---
 title: Integrating CSS
 ---
-[Full Guide Return](fullguide.md)
-
 ## Start Here
 
 Let's get started shall we?
@@ -58,4 +56,16 @@ body {
 }
 ```
 
-If you open up this file you'll see that this image is repeating all over the place, let's fix that. The Image I used is in our [assets](assets.md). To fix this we need two new tags, The first is [background-position](reference.html#background-position)
+If you open up this file you'll see that this image is repeating all over the place, let's fix that. To fix this we need two new tags, The first is [background-position](reference.html#background-position). We will use this to make the position in the center of the page but at the top using `center top`. Next up is [background-size](reference.html#background-size). We will set this to one of our Values `cover`. And finally we have [background-repeat](reference.html#background-repeat) which we will set to `no-repeat`. And with that our code in our CSS file now looks like this,
+
+```css
+body {
+    background-image: url("../img/mdwall.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+```
+
+And with that we have our initial code! Our next section will be some buttons and text formatting!
+[Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/Section%202/Initial%20Code)
