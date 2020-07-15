@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: HTML Cheat Sheet
 ---
 You can find a reference to what each piece of HTML and CSS can do.
 

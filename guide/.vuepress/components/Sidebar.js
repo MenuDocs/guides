@@ -14,12 +14,9 @@ const sidebar = {
       '',
       'tableOfContents',
       'reference',
-      'assets',
-      'fullguide',
-      'section1',
-      'section2'
-      // 'guideintermission',
-      // 'section3'
+      'html',
+      'css',
+      'js'
     ],
     '/topics/reactjs/': [
       '',

@@ -2,7 +2,8 @@
 title: Table of Contents
 ---
 
-Here are all of the available topics - 
+The table of contents to display what we cover within this guide.
 
-- [The Full Guide](fullguide.md)
 - [References](reference.md)
+- [Introduction to HTML](html.md)
+- [Integrating to CSS](css.md)

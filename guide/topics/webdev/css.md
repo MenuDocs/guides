@@ -1,5 +1,5 @@
 ---
-title: Full Guide | Section 2
+title: Integrating CSS
 ---
 [Full Guide Return](fullguide.md)
 
