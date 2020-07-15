@@ -15,8 +15,8 @@ const sidebar = {
       'tableOfContents',
       'reference',
       'html',
-      'css',
-      'js'
+      'css'
+      // 'js'
     ],
     '/topics/reactjs/': [
       '',

@@ -69,3 +69,17 @@ body {
 
 And with that we have our initial code! Our next section will be some buttons and text formatting!
 [Code](https://github.com/MelodicAlbuild/menudocsguides/tree/master/Web%20Dev/Section%202/Initial%20Code)
+
+## Buttons and Text Formatting
+
+For those of you wondering, Our Javascript Portion of the tutorial is locked, this is because we aren't there on the video series yet! If you want to get access to this stuff early, go join our [patreon](https://www.patreon.com/menudocs)!
+
+### Buttons
+
+I'm not gonna lie to you, When I was making this I freaked out trying to find the button from our HTML section only to realize it's on Page 1, not the index. 
+
+All of that aside, let's make a button pretty. First things first we need to learn CSS Classes, so let's hop into that.
+
+#### Classes
+
+Woah a super subclass! What is a CSS Class you ask? Simple! It's any CSS Element that starts with `.` most of the time its like `.myClass`. So what does this look like in code? 
