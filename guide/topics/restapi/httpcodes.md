@@ -5,7 +5,7 @@ What does Each Response Code mean? Check it out here!
 
 # 1xx: Information
 
-100 Status Codes are not going to be covered in this guide. Most 100 Codes are server side and usually mean something was sent to the server. Due to the amount of 100 Codes and how diverse they can be, we can not display each code.
+100 Status Codes are not going to be covered in this guide. Most 100 Codes are server side and usually mean something was sent to the server. Due to the amount of 100 Codes and how diverse they can be, we can not display each code. If you need 1xx status code information you can find it [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#1xx_Informational_response).
 
 # 2xx: Success
 
@@ -17,6 +17,9 @@ The REST API has created a resource now. If you receve this you have most likely
 
 ## 202: Accepted
 This means it is a large request and it has begun processing. Expect a 202 before another code such as 201 or 200.
+
+## 203: Non-Authoritative Information
+This means this server is a proxy which means it got a 200 OK from the origin but it is returning modified data.
 
 ## 204: No Content
 204 is sent when you send a PUT, POST, or DELETE request, but there is no data with the request. No action was taken but it sees your request.
