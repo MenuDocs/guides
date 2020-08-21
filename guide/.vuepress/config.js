@@ -25,7 +25,7 @@ const config = {
         editLinks: true,
         docsBranch: 'master',
         editLinkText: 'Contribute on Github!',
-        startYear: '2018'
+        startYear: '2018',
         notFoundMessages: [
             `Fun Fact: MenuDocs was founded in 2018 by Connor.`,
             `Fun Fact: We're here to stay, the end game doesnt exist. Many more games to play!`,
