@@ -26,6 +26,12 @@ const config = {
         docsBranch: 'master',
         editLinkText: 'Contribute on Github!',
         startYear: '2018'
+        notFoundMessages: [
+            `Fun Fact: MenuDocs was founded in 2018 by Connor.`,
+            `Fun Fact: We're here to stay, the end game doesnt exist. Many more games to play!`,
+            `Fun Fact: We're happily sponsored by Oxide Hosting, they're one of the best sponsors any organisations could ask for! `,
+            `Fun Fact: You found a dead end.`
+        ],
     }
 };
 
