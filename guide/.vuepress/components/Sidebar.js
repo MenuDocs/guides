@@ -3,12 +3,6 @@ const sidebar = {
         '',
         'tableOfContents',
         'example'
-      ],
-
-    '/topics/express/': [
-        '',
-        'tableOfContents',
-        'example'
       ]
 };
 

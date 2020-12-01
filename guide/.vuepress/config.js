@@ -13,6 +13,7 @@ const config = {
               text: 'Guides'
             }
         },
+        logo: '/images/logo.png',
         author: 'MenuDocs Community',
         noFoundPageByTencent: false,
         nav,
