@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "eslint": "^7.1.0",
-    "eslint-config-tesseract": "^0.0.2"
+    "eslint-config-tesseract": "^0.0.2",
+    "watchpack": "^1.6.1"
   }
 }
