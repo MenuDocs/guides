@@ -21,6 +21,7 @@ const config = {
         smoothScroll: true,
         sidebarDepth: 3,
         search: false,
+        base: '/',
         lastUpdated: 'Last Updated',
         repo: 'menudocs/guides',
         editLinks: true,
