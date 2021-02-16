@@ -78,8 +78,7 @@ There are many more properties in the `message` class, however these are the mos
 Having these in mind, we can construct the following code:
 ```javascript
 client.on("message", (message) => {
-  if(message.author.bot) return;
-  if(!message.guild) return;
+  if(message.author.bot || !message.guild) return;
   message.channel.send(`Hello, ${message.author.username}!`);
 });
 ```
@@ -94,8 +93,8 @@ With this, the bot should respond "Hello, [username]!", for example "Hello, Nort
 In the first sentence of creating the event, I said that all commands are prefixed messages. So, let's try and make a very simple command handler.
 ```javascript
 client.on("message", (message) => {
-  if(message.author.bot) return;
-  if(!message.guild) return;
+  if(message.author.bot || !message.guild) return;
+  
   const split = message.content.split(" ");
   const command = split[0];
   const args = split.slice(1);
@@ -118,11 +117,12 @@ So, for example, `user` or `reason` in our command are going to be stored in the
 Ok, moving on with the code!
 ```javascript
 client.on("message", (message) => {
-	if(message.author.bot) return;
-	if(!message.guild) return;
+	if(message.author.bot || !message.guild) return;
+	  
 	const split = message.content.split(" ");
 	const command = split[0];
 	const args = split.slice(1);
+	
 	if(command.toLowerCase() === "!ping".toLowerCase()) {
 		message.channel.send("Pong!");
 	}
@@ -144,11 +144,12 @@ const client = new Client();
 
 client.once("ready", () => console.log("I am ready!"));
 client.on("message", (message) => {
-  if(message.author.bot) return;
-  if(!message.guild) return;
+  if(message.author.bot || !message.guild) return;
+
   const split = message.content.split(" ");
   const command = split[0];
   const args = split.slice(1);
+  
   if(command.toLowerCase() === "!ping".toLowerCase()) {
     message.channel.send("Pong!");
     // Add more code to a command here...
