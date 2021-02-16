@@ -14,7 +14,7 @@ A guide for the basics to moderate level of making a discord.js discord bot.
 
 ## Introduction
 
-If you're here then you're looking to learn about making a Discord bot using Discord.JS. If you don't know what either are then continue reading, if you do then you can skip to [Getting Started](/topics/discordjs/gettingstarted.html).
+If you're here then you're looking to learn about making a Discord bot using Discord.JS. If you don't know what either are then continue reading, if you do then you can skip to [Getting Started](/topics/discordjs/gettingstarted.md).
 
 What is a Discord bot? It is a "bot" account ran with code that has some special abilities a user account cannot do. First the most notable ones are that it is ran with code and they have no limit on the amount of guilds they can join.
 
@@ -24,7 +24,7 @@ What is Discord.JS? It's a library for the Discord API written in Node.JS mostly
 
 What should I know before continuing? It's recommended that you understand at least the basics of JavaScript and how to read documentation, there will be learning resources below.
 
-Now that you understand what a Discord bot and what Discord.JS is and how they can be used and what is needed before you can [get started](/topics/discordjs/gettingstarted.html).
+Now that you understand what a Discord bot and what Discord.JS is and how they can be used and what is needed before you can [get started](/topics/discordjs/gettingstarted.md).
 
 ## Resources
 
