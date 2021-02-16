@@ -2,7 +2,8 @@ const sidebar = {
     '/topics/discordjs/': [
         '',
         'tableOfContents',
-        'gettingStarted'
+        'gettingStarted',
+        'firstCommand',
       ],
 };
 
