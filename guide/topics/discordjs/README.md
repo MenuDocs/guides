@@ -20,7 +20,7 @@ What is a Discord bot? It is a "bot" account ran with code that has some special
 
 What can you do with a Discord bot? There are many uses for a Discord bot, moderating a guild, providing support (tickets, suggestions) or even playing music in voice channels and much more.
 
-What is Discord.JS? It's a library for the Discord API written in Javascript with Node.JS mostly to make Discord bots, though it can be used in the browser to make a dashboard or anything else related.
+What is Discord.JS? It's a Javascript library built as a Node.js module for the Discord API mainly used to make Discord bots, though it can be used in the browser to make a dashboard or anything else related.
 
 What should I know before continuing? It's recommended that you understand at least the basics of JavaScript and how to read documentation, there will be learning resources below.
 
