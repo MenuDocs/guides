@@ -78,11 +78,13 @@ There are many more properties in the `message` class, however these are the mos
 Having these in mind, we can construct the following code:
 ```javascript
 client.on("message", (message) => {
+  if(message.author.bot) return;
+  if(!message.guild) return;
   message.channel.send(`Hello, ${message.author.username}!`);
 });
 ```
 
-In the first bit, we are looking at `message` and then accessing the `channel` property of it. That returns the channel that the message was sent in. Channels have a method `.send(content)` that sends a message to them - and it requires a parameter of what the content of that message should be.
+To make sure that the bot will not fall in a loop responding to it's own messages, we have to add an `if` statement check, to check if the author is a bot. If so, `return` the code. The same goes for the second line, which check's for the guild of the message, as we don't want to listen to DM messages. Now, that we are sure that the bot will not fall into a loop and that guild is present on the object, we can move on.  In the first bit of the last line, we are looking at `message` and then accessing the `channel` property of it. That returns the channel that the message was sent in. Channels have a method `.send(content)` that sends a message to them - and it requires a parameter of what the content of that message should be.
 
 With this code, we can `send` a message in `channel` that the original `message` was sent. Inside the `.send()` function, we can find a template string - indicated with backticks as opposed to the normal quotes. This allowes us to embed some code in the message: `${message.author.username}`. Here, again, we are looking at `message`, but this time not the `channel`, but instead the `author` of that message. That returns a user that sent that message. Then, we are getting the username from it. Easy!
 
@@ -92,6 +94,8 @@ With this, the bot should respond "Hello, [username]!", for example "Hello, Nort
 In the first sentence of creating the event, I said that all commands are prefixed messages. So, let's try and make a very simple command handler.
 ```javascript
 client.on("message", (message) => {
+  if(message.author.bot) return;
+  if(!message.guild) return;
   const split = message.content.split(" ");
   const command = split[0];
   const args = split.slice(1);
@@ -114,6 +118,8 @@ So, for example, `user` or `reason` in our command are going to be stored in the
 Ok, moving on with the code!
 ```javascript
 client.on("message", (message) => {
+	if(message.author.bot) return;
+	if(!message.guild) return;
 	const split = message.content.split(" ");
 	const command = split[0];
 	const args = split.slice(1);
@@ -138,6 +144,8 @@ const client = new Client();
 
 client.once("ready", () => console.log("I am ready!"));
 client.on("message", (message) => {
+  if(message.author.bot) return;
+  if(!message.guild) return;
   const split = message.content.split(" ");
   const command = split[0];
   const args = split.slice(1);
