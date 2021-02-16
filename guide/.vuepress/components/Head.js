@@ -32,7 +32,7 @@ const head =  [
         'meta', 
         { 
             name: 'og:url', 
-            content: 'https://guide.menudocs.org/' 
+            content: 'https://guides.menudocs.org/' 
         }
     ],
     [

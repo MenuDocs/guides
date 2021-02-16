@@ -1,7 +1,7 @@
 ---
 title: Introduction to Discord.js
 authors:
-- WarHammer414
+- Solaris9
 - MenuDocs
 categories:
 - Javascript
