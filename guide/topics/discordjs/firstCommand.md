@@ -10,20 +10,6 @@ tags:
 - Basics
 ---
 
----
-title: Introduction to Discord.js
-authors:
-- Solaris9
-- MenuDocs
-categories:
-- Javascript
-tags:
-- Discord.js
-- Bot Development
----
-A guide for the basics to moderate level of making a discord.js discord bot.
-<!-- more -->
-
 Disclaimer: this tutorial assumes you've followed the [Getting Started](gettingStarted.md) tutorial.
 
 ## Setup
