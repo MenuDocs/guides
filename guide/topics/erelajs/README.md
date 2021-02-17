@@ -8,8 +8,6 @@ categories:
 tags:
 - Erela.js
 - Bot Development
-displayHeaders: true
-sidebarDepth: 1
 ---
 
 ## What is Erela.js?
