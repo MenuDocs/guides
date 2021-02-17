@@ -35,7 +35,10 @@ const config = {
             `Fun Fact: We're happily sponsored by Oxide Hosting, they're one of the best sponsors any organisations could ask for! `,
             `Fun Fact: You found a dead end.`
         ],
-    }
+    },
+    plugins: [
+        'vuepress-plugin-element-tabs'
+      ]
 };
 
 module.exports = config;

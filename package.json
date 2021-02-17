@@ -1,6 +1,6 @@
 {
   "name": "menudocs-guide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the long awaited guide for menudocs",
   "main": "src/index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "vuepress": "^1.5.0",
+    "vuepress-plugin-element-tabs": "^0.2.8",
     "vuepress-theme-reco": "MenuDocs/vuepress-theme-reco-edit#master"
   },
   "devDependencies": {
