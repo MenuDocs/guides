@@ -19,7 +19,7 @@ const config = {
         nav,
         sidebar,
         smoothScroll: true,
-        sidebarDepth: 2,
+        sidebarDepth: 1,
         search: false,
         base: '/',
         lastUpdated: 'Last Updated',
