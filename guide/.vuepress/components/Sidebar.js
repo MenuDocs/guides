@@ -4,6 +4,13 @@ const sidebar = {
         'tableOfContents',
         'gettingStarted'
       ],
+      '/topics/erelajs/': [
+        '',
+        'basics',
+        'moreCommands',
+        'advanced',
+        'updating'
+      ],
 };
 
 module.exports = sidebar;

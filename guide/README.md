@@ -14,3 +14,6 @@ features:
 - title: Community
   details: This is a community driven guide, which means that our community are the ones contributing, writing and reviewing said guide.
 ---
+::: tip
+You can contribute to these guides by adding new markdown files or editing the current ones in a pull request on our [repo here](https://github.com/MenuDocs/guides). 
+:::

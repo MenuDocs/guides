@@ -19,7 +19,7 @@ const config = {
         nav,
         sidebar,
         smoothScroll: true,
-        sidebarDepth: 3,
+        sidebarDepth: 2,
         search: false,
         base: '/',
         lastUpdated: 'Last Updated',
@@ -27,6 +27,7 @@ const config = {
         editLinks: true,
         docsBranch: 'master',
         editLinkText: 'Contribute on Github!',
+        displayAllHeaders: true, 
         startYear: '2018',
         notFoundMessages: [
             `Fun Fact: MenuDocs was founded in 2018 by Connor.`,
