@@ -12,7 +12,7 @@
   "dependencies": {
     "vuepress": "^1.5.0",
     "vuepress-plugin-element-tabs": "^0.2.8",
-    "vuepress-theme-reco": "MenuDocs/vuepress-theme-reco-edit#master"
+    "vuepress-theme-reco": "MenuDocs/vuepress-theme-dart#master"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
