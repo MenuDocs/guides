@@ -5,7 +5,7 @@ const head = require('./components/Head.js');
 const config = {
     title: 'MenuDocs Guide',
     head,
-    theme: 'reco',
+    theme: 'dart',
     themeConfig: {
         blogConfig: {
             category: {

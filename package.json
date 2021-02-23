@@ -12,7 +12,7 @@
   "dependencies": {
     "vuepress": "^1.5.0",
     "vuepress-plugin-element-tabs": "^0.2.8",
-    "vuepress-theme-dart": "MenuDocs/vuepress-theme-dart#master"
+    "vuepress-theme-dart": "git+https://github.com/MenuDocs/vuepress-theme-dart.git"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
