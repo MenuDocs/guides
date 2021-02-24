@@ -10,14 +10,14 @@ tags:
 - Basics
 ---
 
-Disclaimer: this tutorial assumes you've followed the [Getting Started](gettingStarted.md) tutorial.
+Disclaimer: this tutorial assumes you've followed the [Getting Started](gettingStarted.md) tutorial. It also uses the `stable` branch of Discord.js, so double check if you are using it, or anything older.
 
 ## Setup
 In the previous tutorial ([Getting Started](gettingStarted.md)) you learned how to install Node with npm, your programming environment (IDE) and initialized the project.
 
 Just to remind us, this is the code we had set up in the end:
 ```javascript
-// Import the "Client" class from discord.js library
+// Import the "[Client](https://discord.js.org/#/docs/main/stable/class/Client)" class from discord.js library
 const { Client } = require("discord.js");
 // Initialize the client and assign it to a constant variable "client"
 const client = new Client();
@@ -26,7 +26,7 @@ client.once("ready", () => console.log("I am ready!"));
 // Authenticate the bot with your token from the Discord Developer Page
 client.login("-- Your Token --");
 ```
-Upon running above code, the bot printed "I am ready!" in the console. Great!
+This code tells the bot to listen to the "ready" event and print "I am ready!" whenever the bot is connected to the Discord API.
 
 Now, that we are up to date with the previous tutorial, we can start writing more code.
 
@@ -40,7 +40,7 @@ client.on("message", (message) => {
   console.log("Hello!");
 });
 ```
-Let's brake this code down. As with the `ready` event, we are accessing the `client` variable. Then, we are using `.on()` which is a method that creates an _event listener_ on our Discord bot client.
+Let's break this code down. As with the `ready` event, we are accessing the `client` variable. Then, we are using `.on()` which is a method that creates an _event listener_ on our Discord bot client. Events are the Node.js way of launching code when a certain thing happens, for example in our case, the bot connects to the Discord API or a message gets sent. You can read more about events in the [Node.js Events Documentation](https://nodejs.org/api/events.html).
 
 But wait! We can notice, that in the `ready` event, the method is `.once`, not `.on`!
 
@@ -50,9 +50,9 @@ Now with the `once` and `on` difference out of the way, we can look at the argum
 - Event name
 - A callback function
 
-The event name is obviously the name of the event that we want to listen to. There are many events, e.g. these which we have learnt already: `ready` and `message`, but also `guildCreate`, `guildMemberAdd`, `messageDelete`, `roleCreate` and many, many more. You can see all of them in this [Discord events cheatsheet by koad](https://gist.github.com/koad/316b265a91d933fd1b62dddfcc3ff584).
+The event name is obviously the name of the event that we want to listen to. There are many events, e.g. these which we have learnt already: `ready` and `message`, but also `guildCreate`, `guildMemberAdd`, `messageDelete`, `roleCreate` and many, many more. You can see all of them in this handy [Discord events cheatsheet by koad](https://gist.github.com/koad/316b265a91d933fd1b62dddfcc3ff584).
 
-The other parameter, a function, is the function that will be invoked when the event is fired. Oftentimes, it takes in parameters specific for that type of event. Our `message` event, only returns 1 parameter: a message object which we will be able to utilize in a second.
+The second parameter is a callback. This will be executed once the event is triggered. Oftentimes, it takes in parameters specific for that type of event. Our `message` event, only returns 1 parameter: a message object which we will be able to utilize later in the guide.
 
 You can place the event anywhere between the client initialization and the logging in of the client. The best place for it, would be after the `ready` event to keep the code understandable and clean.
 
@@ -78,12 +78,14 @@ There are many more properties in the `message` class, however these are the mos
 Having these in mind, we can construct the following code:
 ```javascript
 client.on("message", (message) => {
-  if(message.author.bot || !message.guild) return;
+  if(message.author.bot) return;
+  if(!message.guild) return;
+  
   message.channel.send(`Hello, ${message.author.username}!`);
 });
 ```
 
-To make sure that the bot will not fall in a loop responding to it's own messages, we have to add an `if` statement check, to check if the author is a bot. If so, `return` the code. The same goes for the second line, which check's for the guild of the message, as we don't want to listen to DM messages. Now, that we are sure that the bot will not fall into a loop and that guild is present on the object, we can move on.  In the first bit of the last line, we are looking at `message` and then accessing the `channel` property of it. That returns the channel that the message was sent in. Channels have a method `.send(content)` that sends a message to them - and it requires a parameter of what the content of that message should be.
+To make sure that the bot will not fall in a loop responding to it's own messages, we have to add two `if` statements. First one is to check if the author is a bot. If so, `return` - stop - the code. That is to prevent any bots, including the one we are making, from (self-)firing commands. The second check (on line 3) sees if the guild is present in the message object, as we don't want to listen to DM messages. Now, that we are sure that the bot will not fall into a loop and that guild is present on the object, we can move on.  In the first bit of the last line, we are looking at `message` and then accessing the `channel` property of it. That returns the channel that the message was sent in. Channels have a method [`.send(content)`](https://discord.js.org/#/docs/main/stable/class/TextChannel?scrollTo=send) that sends a message to them - and it requires a parameter of what the content of that message should be.
 
 With this code, we can `send` a message in `channel` that the original `message` was sent. Inside the `.send()` function, we can find a template string - indicated with backticks as opposed to the normal quotes. This allowes us to embed some code in the message: `${message.author.username}`. Here, again, we are looking at `message`, but this time not the `channel`, but instead the `author` of that message. That returns a user that sent that message. Then, we are getting the username from it. Easy!
 
@@ -93,11 +95,10 @@ With this, the bot should respond "Hello, [username]!", for example "Hello, Nort
 In the first sentence of creating the event, I said that all commands are prefixed messages. So, let's try and make a very simple command handler.
 ```javascript
 client.on("message", (message) => {
-  if(message.author.bot || !message.guild) return;
+  if(message.author.bot) return;
+  if(!message.guild) return;
   
-  const split = message.content.split(" ");
-  const command = split[0];
-  const args = split.slice(1);
+  const [command, ...args] = message.content.split(" ");
 });
 ```
 
@@ -107,21 +108,19 @@ Take this example for example:
 
 The message content is: "!ban user reason", a very simple ban command.
 
-We [split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) it on each space - effectively creating an array of words, that would look like this `["!ban", "user", "reason"]`.
+So, in the code above, we're declaring 2 variables - command and args - from message.content.split(" ") via a "destructuring assignment". Each variable represents an index in the array. So const command = `message.content.split(" ")[0];` is the same as the command variable, and the args variable will be filled with the rest - meaning, it would equal to something like `message.content.split(" ").slice(1)`.
 
-With that in mind, in the next line we declare `command` to `split[0]`, which is going to be our first element of the array - the command.
-After that, we have args which is `split`, but with first element (our command) sliced, so we are left with only whatever comes _after_ the command, which are going to be from now on called arguments.
+For more information on destructuring assignment, check out the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
 
-So, for example, `user` or `reason` in our command are going to be stored in the args array, so we can access it later.
+Ok. Now, for example `user` or `reason` in our command are going to be stored in the `args` array, so we can access it later.
 
 Ok, moving on with the code!
 ```javascript
 client.on("message", (message) => {
-	if(message.author.bot || !message.guild) return;
-	  
-	const split = message.content.split(" ");
-	const command = split[0];
-	const args = split.slice(1);
+	if(message.author.bot) return;
+	if(!message.guild) return;
+	
+	const [command, ...args] = message.content.split(" ");
 	
 	if(command.toLowerCase() === "!ping".toLowerCase()) {
 		message.channel.send("Pong!");
@@ -129,7 +128,7 @@ client.on("message", (message) => {
 });
 ```
 
-Now, a very straightforward `if` statement to check if the `command` part is equal to "!ping". Notice how when checking, after both `command` and the literal command string, and sending a response. Very easy.
+Now, a very straightforward `if` statement checks if the `command` string is equal to `!ping`. We make this comparison before sending the response to ensure the right command is ran. We also force it to lowercase to allow running commands without worrying about case sensitivity.
 
 ## Conclusion
 
@@ -158,6 +157,3 @@ client.on("message", (message) => {
 
 client.login("-- Your Token --");
 ```
-
-In the next tutorial we'll learn how to learn [todo next tutorial]
-<!-- TODO : Add a link -->
