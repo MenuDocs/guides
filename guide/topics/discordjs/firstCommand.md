@@ -98,7 +98,14 @@ client.on("message", (message) => {
   if(message.author.bot) return;
   if(!message.guild) return;
   
-  const [command, ...args] = message.content.split(" ");
+  	// What do we split on?
+	// We split on spaces. The text inside the slashes indicates it's a RegExp.
+	// A RegExp is a way to match values in a string.
+	// How this RegExp works, is that we match on " " (space).
+	// Then the `+` indicates that we wish to match as many spaces in a row as possible.
+	// That way the amount of spaces between your args doesn't matter.
+	
+	const [command, ...args] = message.content.split(/ +/g);
 });
 ```
 
@@ -120,9 +127,9 @@ client.on("message", (message) => {
 	if(message.author.bot) return;
 	if(!message.guild) return;
 	
-	const [command, ...args] = message.content.split(" ");
+	const [command, ...args] = message.content.split(/ +/g);
 	
-	if(command.toLowerCase() === "!ping".toLowerCase()) {
+	if(command.toLowerCase() === "!ping") {
 		message.channel.send("Pong!");
 	}
 });
@@ -143,17 +150,15 @@ const client = new Client();
 
 client.once("ready", () => console.log("I am ready!"));
 client.on("message", (message) => {
-  if(message.author.bot || !message.guild) return;
-
-  const split = message.content.split(" ");
-  const command = split[0];
-  const args = split.slice(1);
-  
-  if(command.toLowerCase() === "!ping".toLowerCase()) {
-    message.channel.send("Pong!");
-    // Add more code to a command here...
-  }
-})
+	if(message.author.bot) return;
+	if(!message.guild) return;
+	
+	const [command, ...args] = message.content.split(/ +/g);
+	
+	if(command.toLowerCase() === "!ping") {
+		message.channel.send("Pong!");
+	}
+});
 
 client.login("-- Your Token --");
 ```
