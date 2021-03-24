@@ -1,7 +1,8 @@
 ---
 title: Creating your first command
 authors:
-- NorteX (NorteX-dev)
+- NorteX-dev
+- MenuDocs
 categories:
 - Javascript
 tags:
