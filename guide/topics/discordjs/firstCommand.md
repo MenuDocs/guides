@@ -3,8 +3,6 @@ title: Creating your first command
 authors:
 - NorteX-dev
 - MenuDocs
-categories:
-- Javascript
 tags:
 - Discord.js
 - Bot Developement
