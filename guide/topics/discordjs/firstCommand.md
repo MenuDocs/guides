@@ -3,7 +3,7 @@ title: Creating your first command
 authors:
 - NorteX (NorteX-dev)
 categories:
-JavaScript
+- JavaScript
 tags:
 - Discord.js
 - Bot Developement
