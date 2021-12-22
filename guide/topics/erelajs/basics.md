@@ -55,7 +55,7 @@ client.manager = new Manager({
   // Method to send voice data to Discord
   send: (id, payload) => {
     const guild = client.guilds.cache.get(id);
-    // NOTE: FOR ERIS YOU NEED JSON.stringify() THE PAYLOAD
+    // NOTE: FOR ERIS // if (guild) guild.shard.sendWS(payload.op, payload.d);
     if (guild) guild.shard.send(payload);
   }
 });
